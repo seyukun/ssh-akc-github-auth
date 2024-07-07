@@ -11,7 +11,7 @@ rm ssh-akc-github-auth
 mkdir -p /usr/local/bin/authorizedkeyscommand
 
 # PER USER
-cat <<EOF > /usr/local/bin/authorizedkeyscommand/<USERNAME>
+cat <<EOF > /usr/local/bin/authorizedkeyscommand/<LOGIN>
 /usr/local/bin/ssh-akc-github-auth --token <TOKEN HERE> --org <ORG HERE> --team <TEAM HERE>
 EOF
 
