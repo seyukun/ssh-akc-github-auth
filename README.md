@@ -5,7 +5,7 @@ The software retrieves ssh pub keys from the GitHub Org team.
 ```bash
 sudo -i
 mkdir -p /usr/local/bin/authorizedkeyscommand
-cat <<EOF > /usr/local/bin/authorizedkeyscommand/USERNAME
+cat <<EOF > /usr/local/bin/authorizedkeyscommand/<USERNAME>
 /usr/local/bin/ssh-akc-github-auth --token <TOKEN HERE> --org <ORG HERE> --team <TEAM HERE>
 EOF
 chmod 100 /usr/local/bin/authorizedkeyscommand/*
