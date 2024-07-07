@@ -21,6 +21,6 @@ exit
 
 edit `/etc/ssh/sshd_config`
 ```
-AuthorizedKeysCommand bash /usr/local/bin/authorizedkeyscommand/%u
+AuthorizedKeysCommand bash /usr/local/bin/authorizedkeyscommand/%u 2> /dev/null
 AuthorizedKeysCommandUser root
 ```
