@@ -4,6 +4,6 @@ The software retrieves ssh pub keys from the GitHub Org team.
 # Usage
 edit `/etc/ssh/sshd_config`
 ```
-AuthorizedKeysCommand /usr/local/bin/ssh-akc-github-auth <TOKEN HERE> <ORG HERE> <TEAM HERE>
+AuthorizedKeysCommand /usr/local/bin/ssh-akc-github-auth --token <TOKEN HERE> --org <ORG HERE> --team <TEAM HERE>
 AuthorizedKeysCommandUser root
 ```
