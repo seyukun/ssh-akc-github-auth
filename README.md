@@ -9,9 +9,12 @@ chmod +x ssh-akc-github-auth
 install ssh-akc-github-auth /usr/local/bin/
 rm ssh-akc-github-auth
 mkdir -p /usr/local/bin/authorizedkeyscommand
+
+# PER USER
 cat <<EOF > /usr/local/bin/authorizedkeyscommand/<USERNAME>
 /usr/local/bin/ssh-akc-github-auth --token <TOKEN HERE> --org <ORG HERE> --team <TEAM HERE>
 EOF
+
 chmod 100 /usr/local/bin/authorizedkeyscommand/*
 exit
 ```
